@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    min-height: 100vh;
+}
+
+
+.ver{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #69696997;
+    opacity: 1;
+    transition-duration: 5s;
+    margin: 0 auto;
+    z-index: 10;
+    
+}
+.opaco{
+    display: block;
+    justify-content: center;
+    align-items: center; 
+    margin: 0 auto;
+    background-color: #fff;
+    width: 90%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    position: relative;
+    border-radius: 20px 20px;
+    margin-top: 20px;
+}
+.general{
+    width: 60%;
+    height: 30px;
+    display: block;
+    margin: 10px  auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.descripcion{
+    width: 60%;
+    height: 60%;
+    display: block;
+    margin: 10px  auto;
+}
+.formulario{
+    padding: 20px;
+    background-color: #005E76;
+    width: 100%;
+    height: 90%;
+}
+.btn_form{
+    background-color: #f7ac11;
+    border: none;
+    width: 50%;
+}
+.btn_form:hover{
+    background-color: #002832;
+    cursor: pointer;
+    color: #fff;
+}
+.nuevo{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #005E76;
+    text-align: center;
+    padding: 20px;
+    opacity: 1;
+    color: #fff;
+}
+/* form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+
+
+
+
+
+nav{
+    background-color: #002832;
+    height: 50px;
+    display: block;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 0;
+    min-width: 100%;
+}
+.contenedor{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+img{
+    width: 50px;
+    display: flex;
+}
+.perfil{
+display: flex;
+justify-content: space-between;
+}
+.perfil2{
+    background-color: #f7ac11;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+    }
+}
+.filter{
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    
+}
+.search{
+    justify-content: start;
+    width: 50%;
+    display: flex;
+    margin-left: 3%;
+}
+.icono{
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.table{
+    margin-top: 50px;
+}
+.contenedor-add{
+    display: flex;
+    justify-content: end;
+}
+.buscando{
+    width: 300px;
+    height: 30px;
+    border-radius: 30px;
+    border: color(#002832);
+    padding-left: 10px;
+}
+.buscar:hover{
+    cursor: pointer;
+}
+.select{
+    width: 180px;
+    height: 30px;
+    border-radius: 30px;
+    border: 2px solid #002832;
+}
+
+.select:focus{
+    border-color: #002832;
+    outline: none;
+}
+.add{
+    display: flex;
+    justify-content: center;
+}
+.agregar{
+    width: 100px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #002832;
+    color: #fff;
+    font-size: 15px;
+}
+.agregar:hover{
+    background-color: #005E76;
+    cursor: pointer;
+    border: none;
+}
+.icon{
+    filter: invert(100%);
+}
+
+table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+    text-align: left;
+}
+th{
+    color: #fff;
+}
+main.table{
+    width: 100%;
+    height: 90%;
+    background-color: #fff5;
+}
+
+.titulo_tabla{
+    background-color: #005E76;
+}
+.table_body{
+        width: 95%;
+        max-height: calc(89% - .8rem);
+        background-color: #00283281;
+        margin: .8rem auto;
+        border-radius: .6rem;
+        overflow: auto;
+}
+.table_body::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+.table_body::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+.table_body:hover::-webkit-scrollbar-thumb{
+    visibility: visible;
+
+}
+table{
+    width: 100%;
+}
+tbody tr{
+    background-color: #fff;
+}
+tbody tr:nth-child(even){
+    background-color: #dfe3e4;
+}
+tbody tr:hover{
+    background-color: #a9acad;
+    color: #000;
+    cursor: pointer;
+}
+@media (max-width: 1000px){
+    td:not(:first-of-type){
+        min-width: 12.1rem;
+    }
+}
+
+
+body {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    height: 100vh;            
+}
+.login {
+    width: 80%; /* Ajusta el ancho según necesites */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Para darle un poco de estilo */
+    background-color: white;
+    border-radius: 8px; /* Opcional, para bordes redondeados */
+}
+.login > h1{
+    text-align: center;
+    color: #002832;
+}
+.contenedor-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen-login > img{
+    height: 300px;
+    width: 300px;
+}
+.formulario-login{
+    display: flex;
+    flex-direction: column;
+}
+.formulario-login input,
+.formulario-login button {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+}
+.formulario-login input{
+    background-color: #eeeeee;
+    border-radius: 8px;
+}
+.formulario-login button{
+    background-color: #002832;
+    border-radius: 8px;
+    color: #fff;
+}
+.formulario-login button:hover{
+    background-color: #f7ac11;
+    cursor: pointer;
+    border-radius: 8px;
+    color: #000;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button  > .nada, .eliminar-btn, .editar-btn{
+    display: flex;
+    border: none;
+    width: 100%;
+    padding: 6px;
+    margin: 2px;
+    text-align: center;
+}
+td > button{
+    font-weight: 600;
+    font-size: 15px;
+}
+.eliminar-btn{
+    background-color: #e03d3185;
+}
+.editar-btn{
+    background-color: #fac860;
+}
+.eliminar-btn:hover{
+    cursor: pointer;
+    background-color: #e03d31;
+    color: #fff;
+}
+.editar-btn:hover{
+    cursor: pointer;
+    background-color: #f7ac11;
+    color: #000;
+}
